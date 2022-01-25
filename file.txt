@@ -1,0 +1,3 @@
+Name, Age, Burn 
+John, 30, 302
+Jane, 32, 222
