@@ -17,7 +17,7 @@ console.log("hyes"+numbers);
 const data = {
   labels: labels,
   datasets: [{
-    label: "Hartz4Sanktionen_"+ame,
+    label: "Hartz4Sanktionen_"+ame+" in Prozent",
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
     data: bumbers,
