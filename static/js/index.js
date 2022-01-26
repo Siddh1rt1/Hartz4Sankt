@@ -42,7 +42,7 @@ newne.shift();
 const data = {
   labels: real,
   datasets: [{
-    label: "Hartz4Sanktionen_"+hello,
+    label: "Hartz4Sanktionsquote von "+hello+" in Prozent pro ELB,
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
     data: newne,
