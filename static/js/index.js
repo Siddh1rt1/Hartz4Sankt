@@ -1,26 +1,51 @@
 
+
+console.log("1");
+
 const a = ['2019Okt',	'2019Nov',	'2019Dez',	'2020Jan',	'2020Feb',	'2020Mär',	'2020Apr',	'2020Mai',	'2020Jun',	'2020Jul',	'2020Aug',	'2020Sep',	'2020Okt',	'2020Nov',	'2020Dez',	'2021Jan',	'2021Feb',	'2021Mär',	'2021Apr',	'2021Mai',	'2021Jun',	'2021Jul',	'2021Aug',	'2021Sep'];
 const labels = a;
-
 const mylive = document.getElementById("bory").innerHTML;
+test = mylive.slice(2,-2);
+const real=test.split(';');
+
+console.log("2");
 const mylove = document.getElementById("story").innerHTML;
+console.log("3");
+ame =  mylove.split(",");
+
+
+console.log("ame=" +ame[0])
 const strArray = JSON.parse(mylove.replaceAll("'", "\""));
-ame =  strArray[0]+" "+strArray[1];
+
 const numbers = strArray.map(x => Number(x));
-
-console.log("mooooon"+ame);
 const bumbers = numbers.slice(4);
-console.log("hyes"+numbers);
 
+real.shift();
+real.shift();
 
+tre = document.getElementById("story").innerHTML;
+
+const ntre = tre;
+
+tre=tre.replace(',','');
+tre=tre.replaceAll("'" ,'');
+tre=tre.replaceAll("[" ,'');
+tre=tre.replaceAll("]" ,'');
+const num=tre.split(";");
+hello=num[0];
+console.log(hello);
+num.shift();
+const newne=num;
+
+newne.shift();
 
 const data = {
-  labels: labels,
+  labels: real,
   datasets: [{
-    label: "Hartz4Sanktionen_"+ame+" in Prozent",
+    label: "Hartz4Sanktionen_"+hello,
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
-    data: bumbers,
+    data: newne,
 
   }
   ,
@@ -48,7 +73,3 @@ str.split("19");
 console.log(str);
   
 });
-console.log("hello");
-const z = document.getElementById("story").innerHTML;
-console.log(z);
-console.log("log_2");

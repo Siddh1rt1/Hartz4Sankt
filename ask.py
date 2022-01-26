@@ -13,7 +13,8 @@ for line in lines:
         t=x 
         break
     else :
-        x=x+1  
+        x=x+1 
+
 print(x)
 print("this is"+lines[x])    
 
