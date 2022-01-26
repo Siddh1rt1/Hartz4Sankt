@@ -19,7 +19,7 @@ def hello():
 @app.route('/', methods=['POST'])
 def my_form_post():
     in_text = request.form['text']
-    with open('main_full_percent.csv','r') as read_obj:
+    with open('main_full_percent.csv','r',encoding="iso-8859-1") as read_obj:
         csv_reader = reader(read_obj)
         for row in csv_reader:
             
